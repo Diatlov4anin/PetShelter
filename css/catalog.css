@@ -1,0 +1,275 @@
+*,
+*::before,
+*::after {
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.header {
+    max-width: 1200px;
+    margin-left: 40px;
+    margin-right: 40px;
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.header__nav {
+    padding: 60px 0px;
+}
+
+.header__nav li {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.header__link {
+    padding: 10px;
+    margin-left: 25px;
+    text-decoration: none;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: #545454;
+}
+
+.header__link:hover {
+    color: #292929;
+}
+
+.header__link_select {
+    padding: 10px;
+    text-decoration: none;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: #545454;
+    border-bottom: solid #F1CDB3;
+}
+
+.header__link_select:hover {
+    color: #292929;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+.pets {
+    background: #F6F6F6;
+    padding-bottom: 100px;
+
+}
+
+.pets__title {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 80px;
+    padding-bottom: 60px;
+    max-width: 450px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #545454;
+
+}
+
+
+.petsCards {
+    background: #F6F6F6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.petsCards__arrow {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+}
+
+.petsCards__arrow:hover {
+    background: #FDDCC4;
+    border-radius: 50%;
+}
+
+.petsCards__card {
+    max-width: 270px;
+    background: #FAFAFA;
+    border-radius: 9px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+.petsCards__card:hover {
+    background: #FFFFFF;
+}
+
+.petsCards__title {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 0px;
+    max-width: 74px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #545454;
+}
+
+.petsCards__buttonCard {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    align-items: center;
+    padding: 15px 45px;
+    width: 187px;
+    height: 52px;
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    background: #FAFAFA;
+    cursor: pointer;
+}
+
+.petsCards__buttonCard:hover {
+    background: #FDDCC4;
+    border: none;
+}
+
+.petsCards__button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    align-items: center;
+    padding: 15px 45px;
+    width: 261px;
+    background: #F1CDB3;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+}
+
+.petsCards__button:hover {
+    background: #FDDCC4;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination__button {
+    margin: 0px 10px;
+    cursor: pointer;
+    border: none;
+    background: #F6F6F6;
+}
+
+.pagination__button:hover {
+    border-radius: 50%;
+    background: #FDDCC4;
+}
+
+.footer {
+    background: linear-gradient(90.26deg, #7D604B 0.23%, #251000 99.8%);
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer__text {
+    max-width: 279px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+}
+
+.footer__contacts-data {
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.footer__data {
+    padding-left: 20px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #F1CDB3;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        max-width: 800px
+    }
+    .header__nav {
+        flex-basis: calc(90% - 35px);
+    }
+}
+
+
+@media (max-width: 767px) {
+    .container {
+        max-width: 650px
+    }
+    .header__nav {
+        flex-basis: calc(30%);
+    }
+    .menu-mobile {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+}
+
+@media (max-width: 425px) {
+  
+    .header__nav {
+        flex-basis: calc(30%);
+    }
+    .menu-mobile {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+}
